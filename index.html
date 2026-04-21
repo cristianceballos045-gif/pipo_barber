@@ -2,6 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+
+  <!-- 🔥 IMPORTANTE (esto arregla el tamaño en celular) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Pipo Barber</title>
 
   <style>
@@ -16,14 +20,17 @@
     }
 
     .container {
+      width: 100%;
+      max-width: 400px;
       text-align: center;
+      padding: 20px;
     }
 
     img {
-      width: 180px;
+      width: 70%; /* 🔥 se adapta al celular */
+      max-width: 220px;
       margin-bottom: 40px;
 
-      /* efecto para que el logo blanco se vea bien */
       background: #0b2d16;
       padding: 15px;
       border-radius: 20px;
@@ -33,9 +40,10 @@
     a {
       display: block;
       margin: 15px auto;
-      padding: 15px;
-      width: 260px;
-      border-radius: 12px;
+      padding: 18px;
+      width: 90%; /* 🔥 ancho completo en celular */
+      max-width: 320px;
+      border-radius: 14px;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
@@ -43,7 +51,7 @@
     }
 
     a:hover {
-      transform: scale(1.08);
+      transform: scale(1.05);
     }
 
     .whatsapp {
@@ -63,7 +71,7 @@
 
   <div class="container">
 
-    <!-- TU LOGO (con espacios corregidos para web) -->
+    <!-- TU LOGO -->
     <img src="logo.png" alt="Pipo Barber">
 
     <!-- BOTONES -->
