@@ -2,10 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-
-  <!-- 🔥 IMPORTANTE (esto arregla el tamaño en celular) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Pipo Barber</title>
 
   <style>
@@ -19,49 +16,57 @@
       height: 100vh;
     }
 
-    .container {
-      width: 100%;
-      max-width: 400px;
+    .card {
+      background: #e9e9e9;
+      width: 90%;
+      max-width: 350px;
+      border-radius: 25px;
+      padding: 30px 20px;
       text-align: center;
-      padding: 20px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
-    img {
-      width: 70%; /* 🔥 se adapta al celular */
-      max-width: 220px;
+    /* LOGO */
+    .logo {
+      width: 70%;
+      max-width: 180px;
       margin-bottom: 40px;
-
-      background: #0b2d16;
-      padding: 15px;
-      border-radius: 20px;
-      box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
     }
 
-    a {
-      display: block;
-      margin: 15px auto;
-      padding: 18px;
-      width: 90%; /* 🔥 ancho completo en celular */
-      max-width: 320px;
-      border-radius: 14px;
-      text-decoration: none;
+    /* BOTONES */
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px auto;
+      padding: 15px;
+      width: 85%;
+      border-radius: 40px;
       font-size: 18px;
       font-weight: bold;
-      transition: 0.3s;
+      text-decoration: none;
+      color: white;
+      box-shadow: 0 6px 0 rgba(0,0,0,0.3);
+      transition: 0.2s;
     }
 
-    a:hover {
-      transform: scale(1.05);
+    .btn:active {
+      transform: translateY(4px);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.3);
     }
 
+    /* INSTAGRAM */
+    .instagram {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    }
+
+    /* WHATSAPP */
     .whatsapp {
       background: #25D366;
-      color: white;
-    }
-
-    .instagram {
-      background: linear-gradient(45deg, #833AB4, #E1306C, #F77737);
-      color: white;
+      color: black;
+      border: 2px solid #000;
     }
 
   </style>
@@ -69,18 +74,19 @@
 
 <body>
 
-  <div class="container">
+  <div class="card">
 
-    <!-- TU LOGO -->
-    <img src="logo.png" alt="Pipo Barber">
+    <!-- LOGO -->
+    <img src="Post%20para%20Instagram%20Barbería%20Moderno%20Minimalista%20Negro.png" class="logo">
 
-    <!-- BOTONES -->
-    <a href="https://wa.me/TUNUMERO" target="_blank" class="whatsapp">
-      WhatsApp
+    <!-- INSTAGRAM -->
+    <a href="https://www.instagram.com/pipobarber._?igsh=dmdmdTR0eDdob3Bz" target="_blank" class="btn instagram">
+      Instagram
     </a>
 
-    <a href="https://www.instagram.com/pipobarber._?igsh=dmdmdTR0eDdob3Bz" target="_blank" class="instagram">
-      Instagram
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/TUNUMERO" target="_blank" class="btn whatsapp">
+      WhatsApp
     </a>
 
   </div>
